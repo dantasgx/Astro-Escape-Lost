@@ -1,0 +1,50 @@
+.dev-topo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  flex-wrap: wrap;
+
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.foto-dev {
+  width: 220px;
+  height: 220px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 3px solid #ffffff;
+}
+
+.dev-info {
+  max-width: 500px;
+  text-align: left;
+}
+
+.dev-info h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.dev-info p {
+  line-height: 1.7;
+  color: #d1d5db;
+}
+
+
+
+.processo-grid {
+  display: flex;
+  gap: 20px;
+
+  margin-top: 30px;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+}

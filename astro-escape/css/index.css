@@ -1,0 +1,44 @@
+.hero {
+  min-height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 40px 20px;
+
+  background-image:
+    linear-gradient(rgba(5, 5, 15, 0.65),
+    rgba(5, 5, 15, 0.75)),
+    url("../img/fundo-tela.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+
+.hero-texto {
+  max-width: 560px;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 19px;
+  line-height: 1.6;
+  color: #e5e7eb;
+}
+
