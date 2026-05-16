@@ -1,43 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astro Escape</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astro Escape</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header>
-        <h1>Astro Escape</h1>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="dev.html">Desenvolvedor</a>
-            <a href="jogo.html">Jogar</a>
-        </nav>
-    </header>
 
-  <main>
-    <section>
+<body>
+
+  <header class="topo">
+    <h1>Astro Escape</h1>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="dev.html">Desenvolvimento</a>
+      <a href="jogo.html" class="btn-nav">Jogar</a>
+    </nav>
+  </header>
+
+  <main class="pagina-jogo">
+
+    <section class="jogo-container">
       <canvas id="gameCanvas" width="800" height="400"></canvas>
     </section>
 
     <section class="hud">
-      <p>Vidas: <span id="vidas">2</span></p>
-      <p>Fases: <span id="fase">1</span>/4</p>
-      <p>Itens: <span id="itens">0</span>/2</p>
-      <p>Mortes Totais: <span id="mortes">0</span></p>
+      <div class="hud-card">
+        <p>❤️ Vidas</p>
+        <span id="vidas">2</span>
+      </div>
+
+      <div class="hud-card">
+        <p>🪐 Fase</p>
+        <span id="fase">1</span>/4
+      </div>
+
+      <div class="hud-card">
+        <p>🔧 Itens</p>
+        <span id="itens">0</span>/2
+      </div>
+
+      <div class="hud-card">
+        <p>☠️ Mortes</p>
+        <span id="mortes">0</span>
+      </div>
     </section>
 
-    <section>
-      <button id="startButton">Iniciar jogo</button>
-    </section>
-  </main>
-    <section>
+    <section class="comandos-simples">
       <h2>Comandos</h2>
+
       <p>A / ← : mover para a esquerda</p>
       <p>D / → : mover para a direita</p>
-      <p>W / ↑ / : pular</p>
+      <p>W / ↑ : pular</p>
     </section>
+
+  </main>
 
   <script src="js/assets.js"></script>
   <script src="js/estado.js"></script>

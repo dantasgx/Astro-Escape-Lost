@@ -61,7 +61,6 @@ let mostrandoIntroFase = true
 // ===================================================
 //    TECLADO
 // ==================================================
-
 // Usado pra guardar o estado das teclas pressionadas
 let teclas = {
     esquerda: false,

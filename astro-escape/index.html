@@ -1,37 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astro Escape</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Astro Escape</h1>
-        <nav>
-        <a href="index.html">Início</a>
-        <a href="dev.html">Desenvolvedores</a>
-        <a href="jogo.html">Jogar</a>
-        </nav>
-    </header>
+  <header class="topo">
+    <h1>Astro Escape</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="dev.html">Desenvolvimento</a>
+      <a href="jogo.html" class="btn-nav">Jogar</a>
+    </nav>
+  </header>
 
-    <main>
-        <section>
-            <h2>Sobre o jogo</h2>
-            <p>
-                Astro Escape é um jogo de plataforma 2D em que o jogador controla um astronauta
-                perdido em um sistema planetário desconhecido. O objetivo é coletar peças da nave,
-                escapar dos alienígenas e avançar por diferentes planetas até conseguir voltar para casa.
-            </p>
-        </section>
+  <main>
+    <section class="hero">
+      <div class="hero-texto">
+        <h2>Perdido entre planetas desconhecidos</h2>
+        <p>
+          Controle um astronauta perdido no espaço, colete peças da nave,
+          enfrente planetas perigosos e tente escapar antes que seja tarde.
+        </p>
+        <div class="botoes">
+          <a href="jogo.html" class="botao">Jogar agora</a>
+          <a href="#sobre" class="botao secundario">Conhecer o projeto</a>
+        </div>
+      </div>
+    </section>
 
-        <section>
-            <h2>Objetivo</h2>
-            <p>
-                Colete os itens necessários em cada fase, desvie dos inimigos e alcance a nave para avançar.
-            </p>
-        </section>
-    </main>
+    <section id="sobre" class="card">
+        <h2>Sobre o jogo</h2>
+
+        <p>
+        Astro Escape é um jogo de plataforma 2D desenvolvido em HTML, CSS e JavaScript,
+        utilizando a API Canvas para construção das mecânicas e renderização visual.
+        </p>
+
+        <p>
+        O jogador controla um astronauta perdido em um sistema planetário desconhecido
+        e precisa recuperar peças da nave para conseguir escapar e voltar para casa.
+        </p>
+
+        <p>
+        A jornada começa em <strong>Orion</strong>, um planeta mais estável,
+        criado para introduzir os comandos, movimentação e mecânicas principais do jogo.
+        </p>
+
+        <p>
+        Em seguida, o jogador chega em <strong>Void-9</strong>,
+        um planeta em ruínas com grandes espaços vazios e plataformas perigosas,
+        exigindo mais precisão nos saltos e movimentação.
+        </p>
+
+        <p>
+        O terceiro planeta, <strong>Thornix</strong>,
+        apresenta um ambiente hostil repleto de espinhos e obstáculos,
+        aumentando significativamente a dificuldade da travessia.
+        </p>
+
+        <p>
+        Por fim, existe <strong>Umbra</strong>.
+        Um planeta mergulhado na escuridão, onde quase nada pode ser visto.
+        O jogador precisa seguir apenas pequenas fontes de luz para sobreviver
+        e descobrir o que realmente existe naquele lugar.
+        </p>
+
+        <p>
+        Além das fases, o jogo possui sistema de colisão, inimigos com patrulha,
+        sprites animados, iluminação dinâmica, tela inicial, tela final
+        e dois modos de dificuldade.
+        </p>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Objetivo</h3>
+        <p>Colete as peças, evite inimigos e espinhos, e chegue até a nave.</p>
+      </div>
+
+      <div class="card">
+        <h3>Modos de jogo</h3>
+        <p>No modo normal, você volta para a fase atual. No difícil, morrer leva você de volta à fase 1.</p>
+      </div>
+
+      <div class="card">
+        <h3>Fases</h3>
+        <p>Cada planeta tem uma mecânica própria: tutorial, vazio, espinhos e escuridão.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto desenvolvido para prática de JavaScript, Canvas e criação de jogos 2D.</p>
+  </footer>
 </body>
 </html>

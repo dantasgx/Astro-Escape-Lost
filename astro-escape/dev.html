@@ -1,32 +1,135 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astro Escape - Desenvolvedor</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astro Escape - Desenvolvimento</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Astro Escape</h1>
-        <nav>
-        <a href="index.html">Início</a>
-        <a href="dev.html">Desenvolvedores</a>
-        <a href="jogo.html">Jogar</a>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h2>Desenvolvedor</h2>
-            <p><strong>Nome:</strong> Seu nome aqui</p>
-            <p><strong>RA:</strong> Seu RA aqui</p>
-            <p><strong>E-mail:</strong> Seu e-mail aqui</p>
+  <header class="topo">
+    <h1>Astro Escape</h1>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="dev.html">Desenvolvimento</a>
+      <a href="jogo.html" class="btn-nav">Jogar</a>
+    </nav>
+  </header>
+  <section class="dev-topo">
+
+        <img src="img/eu.jpg" alt="Gabriel Dantas" class="foto-dev">
+
+        <div class="dev-info">
+            <h2>Gabriel Dantas</h2>
+
             <p>
-                Estudante do primeiro semestre, responsável pela criação das páginas, lógica do jogo,
-                estrutura visual e desenvolvimento em JavaScript com canvas.
+            Estudante de Ciência da Computação e desenvolvedor do projeto Astro Escape.
             </p>
-        </section>
-    </main>
+
+            <p>
+            Projeto desenvolvido utilizando HTML, CSS e JavaScript com Canvas.
+            </p>
+        </div>
+
+    </section>
+
+  <main>
+
+    <section class="card">
+
+        <h2>Sobre o desenvolvimento</h2>
+
+        <p>
+        Astro Escape foi desenvolvido como um projeto de jogo de plataforma 2D,
+        focado em lógica de programação, mecânicas de gameplay e evolução visual.
+        </p>
+
+        <p>
+        Durante o desenvolvimento foram implementados sistemas como colisão,
+        movimentação, patrulha de inimigos, iluminação dinâmica, sistema de vidas,
+        menu inicial e progressão entre fases.
+        </p>
+
+        <p>
+        Cada planeta foi planejado separadamente, começando por rascunhos no papel,
+        seguido de protótipos simples com blocos e, por fim,
+        a construção da versão final com sprites e cenários próprios.
+        </p>
+
+        <br>
+
+        <p>
+        <strong>RA:</strong> 24.125.042-2<br>
+        <strong>E-mail:</strong> bieldantas081620@gmail.com
+        </p>
+
+    </section>
+
+    <section class="card">
+
+    <h2>Processo de Desenvolvimento</h2>
+
+        <p>
+        Cada fase do Astro Escape passou por três etapas principais:
+        planejamento no papel, prototipação com blocos e construção visual final utilizando sprites e cenários.
+        </p>
+
+        <div class="processo-grid">
+
+            <div class="processo-card">
+                <img src="img/fase-papel.jpg" alt="Fase desenhada no papel">
+
+                <h3>Planejamento</h3>
+
+                <p>
+                Estrutura inicial da fase desenhada no papel para organizar plataformas, obstáculos e fluxo do jogador.
+                </p>
+            </div>
+
+            <div class="processo-card">
+                <img src="img/astro-escape3.png" alt="Protótipo da fase">
+
+                <h3>Protótipo</h3>
+
+                <p>
+                Teste das mecânicas utilizando apenas blocos simples para validar movimentação e dificuldade.
+                </p>
+            </div>
+
+            <div class="processo-card">
+                <img src="img/fase3.png" alt="Versão final da fase">
+
+                <h3>Versão Final</h3>
+
+                <p>
+                Adição de sprites, cenários, iluminação e identidade visual própria para cada planeta.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+        <section class="card">
+        <h2>Créditos</h2>
+
+        <p>
+            Alguns sprites e assets visuais utilizados no projeto foram adaptados
+            de bibliotecas gratuitas e conteúdos autorais para fins acadêmicos.
+        </p>
+
+        <p>
+            Fundos, telas: autoria própria com ajuda de Inteligência Artificial.<br>
+            Sprites adicionais (planetas, astronauta, aliens, espinhos, nave, itens) e referências visuais: Kenney.nl. Todos os direitos reservados ao site.
+        </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Astro Escape - 2026</p>
+  </footer>
+
 </body>
 </html>
