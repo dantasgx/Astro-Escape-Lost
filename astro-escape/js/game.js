@@ -51,7 +51,6 @@ function desenhar(){
     ctx.clearRect(0,0,canvas.width,canvas.height);
 
     if (estadoJogo == "menu") {
-
         // desenha imagem de fundo
         if (imgMenu.complete && imgMenu.naturalWidth > 0) {
             desenhaMenu();
@@ -68,7 +67,6 @@ function desenhar(){
         ctx.font = "16px Arial";
         ctx.textAlign = "center";
 
-
         requestAnimationFrame(desenhar);
         return;
     }
@@ -78,7 +76,6 @@ function desenhar(){
         requestAnimationFrame(desenhar);
         return;
     }
-
 
     // FUNDO DA FASE 1
     if (faseAtual == 1 && imgFundoFase1.complete && imgFundoFase1.naturalWidth > 0) {
@@ -201,7 +198,6 @@ function desenhar(){
         }
     }
 
-    
     // ------------------------------------------------
     //    MOVIMENTO - INIMIGOS
     // ------------------------------------------------
@@ -219,7 +215,6 @@ function desenhar(){
         }
     }
 
-    
     // ------------------------------------------------
     //    INTERAÇÃO COM INIMIGOS
     // ------------------------------------------------
@@ -435,9 +430,8 @@ function desenhar(){
 
 }
 // ===================================================
-//    INICIAR O JOGO - MOMENTO DE TESTES    
+//    INICIAR O JOGO  MOMENTO DE TESTES    
 // ==================================================
-
 // carregarFase1();
 // if (debugFase == 1) carregarFase1();
 // if (debugFase == 2) carregarFase2();
