@@ -1,4 +1,5 @@
-
+// FUNÇÃO TEXTO DAS FASES
+// --------------------------------------------------------------
 function TextoDaFase(){
     if(faseAtual == 1){
         return{

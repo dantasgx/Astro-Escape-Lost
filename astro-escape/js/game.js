@@ -47,7 +47,6 @@ function desenhar(){
     // ------------------------------------------------
     //    LIMPAR TELA
     // ------------------------------------------------
-
     ctx.clearRect(0,0,canvas.width,canvas.height);
 
     if (estadoJogo == "menu") {
@@ -62,7 +61,6 @@ function desenhar(){
             ctx.fillRect(0, 0, canvas.width, canvas.height);
         }
 
-        // texto extra (opcional)
         ctx.fillStyle = "white";
         ctx.font = "16px Arial";
         ctx.textAlign = "center";
